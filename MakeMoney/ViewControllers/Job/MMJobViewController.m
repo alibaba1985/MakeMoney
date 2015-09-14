@@ -13,6 +13,7 @@
 #import "UIImageView+WebCache.h"
 #import "MJRefresh.h"
 #import "MMWebViewController.h"
+#import "MMJobInfoView.h"
 
 #define kImageWidth  145
 #define kImageHeight 95
@@ -116,7 +117,7 @@
         // 进入刷新状态就会回调这个Block
         
         // 模拟延迟加载数据，因此2秒后才调用）
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [vc.collectionView reloadData];
             // 结束刷新
             [vc.collectionView headerEndRefreshing];
@@ -131,7 +132,7 @@
     [self.collectionView addFooterWithCallback:^{
         // 进入刷新状态就会回调这个Block
         // 模拟延迟加载数据，因此2秒后才调用）
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [vc.collectionView reloadData];
             // 结束刷新
             [vc.collectionView footerEndRefreshing];
@@ -158,6 +159,14 @@
 
 #pragma mark - CollectionView Delegate
 #pragma mark - collectionView的数据源和代理方法
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    MMJobInfoView *info = [[MMJobInfoView alloc] initWithInfo:nil jobType:MMJobTypeDownload container:self.tabBarController.view];
+    [info show];
+}
+
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return 18;//self.jobList.count;

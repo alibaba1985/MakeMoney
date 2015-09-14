@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		81C416191BA6E3ED0016E7B0 /* MMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C416181BA6E3ED0016E7B0 /* MMWebViewController.m */; };
+		81C4161F1BA732C20016E7B0 /* MMJobInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C4161E1BA732C20016E7B0 /* MMJobInfoView.m */; };
 		81E161E71BA3DA330054EDD5 /* MakeMoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E161E61BA3DA330054EDD5 /* MakeMoneyTests.m */; };
 		81E162A51BA3DCCF0054EDD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E161F21BA3DCCF0054EDD5 /* AppDelegate.m */; };
 		81E162A61BA3DCCF0054EDD5 /* UP_NSString+Format.mm in Sources */ = {isa = PBXBuildFile; fileRef = 81E161F61BA3DCCF0054EDD5 /* UP_NSString+Format.mm */; };
@@ -97,6 +98,8 @@
 /* Begin PBXFileReference section */
 		81C416171BA6E3ED0016E7B0 /* MMWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMWebViewController.h; sourceTree = "<group>"; };
 		81C416181BA6E3ED0016E7B0 /* MMWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMWebViewController.m; sourceTree = "<group>"; };
+		81C4161D1BA732C20016E7B0 /* MMJobInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMJobInfoView.h; sourceTree = "<group>"; };
+		81C4161E1BA732C20016E7B0 /* MMJobInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMJobInfoView.m; sourceTree = "<group>"; };
 		81E161C71BA3DA330054EDD5 /* MakeMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E161E01BA3DA330054EDD5 /* MakeMoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeMoneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E161E51BA3DA330054EDD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -642,6 +645,8 @@
 				81F5FC991BA565F9008C0CC3 /* MMJobViewCell.m */,
 				81F5FC9F1BA57498008C0CC3 /* MMJobHeaderView.h */,
 				81F5FCA01BA57498008C0CC3 /* MMJobHeaderView.m */,
+				81C4161D1BA732C20016E7B0 /* MMJobInfoView.h */,
+				81C4161E1BA732C20016E7B0 /* MMJobInfoView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -811,6 +816,7 @@
 				81E162B71BA3DCCF0054EDD5 /* AFURLSessionManager.m in Sources */,
 				81E162DC1BA3DCCF0054EDD5 /* WMPageController.m in Sources */,
 				81E162BB1BA3DCCF0054EDD5 /* NSArray+JSONModel.m in Sources */,
+				81C4161F1BA732C20016E7B0 /* MMJobInfoView.m in Sources */,
 				81E162B41BA3DCCF0054EDD5 /* AFURLConnectionOperation.m in Sources */,
 				81E162C61BA3DCCF0054EDD5 /* UIScrollView+MJRefresh.m in Sources */,
 				81E162AF1BA3DCCF0054EDD5 /* AFHTTPRequestOperation.m in Sources */,

@@ -29,7 +29,7 @@
         CGFloat width = CGRectGetWidth(self.frame);
         CGFloat height = CGRectGetHeight(self.frame);
         
-        _loopView = [[WMLoopView alloc] initWithFrame:CGRectMake(0, 0, width, height) images:self.loopImages autoPlay:YES delay:6.0];
+        _loopView = [[WMLoopView alloc] initWithFrame:CGRectMake(0, 0, width, height) images:self.loopImages autoPlay:YES delay:10.0];
         _loopView.delegate = self.loopDelegate;
         [self addSubview:_loopView];
     }
