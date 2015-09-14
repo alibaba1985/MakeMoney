@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81C416191BA6E3ED0016E7B0 /* MMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C416181BA6E3ED0016E7B0 /* MMWebViewController.m */; };
 		81E161E71BA3DA330054EDD5 /* MakeMoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E161E61BA3DA330054EDD5 /* MakeMoneyTests.m */; };
 		81E162A51BA3DCCF0054EDD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E161F21BA3DCCF0054EDD5 /* AppDelegate.m */; };
 		81E162A61BA3DCCF0054EDD5 /* UP_NSString+Format.mm in Sources */ = {isa = PBXBuildFile; fileRef = 81E161F61BA3DCCF0054EDD5 /* UP_NSString+Format.mm */; };
@@ -94,6 +95,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81C416171BA6E3ED0016E7B0 /* MMWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMWebViewController.h; sourceTree = "<group>"; };
+		81C416181BA6E3ED0016E7B0 /* MMWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMWebViewController.m; sourceTree = "<group>"; };
 		81E161C71BA3DA330054EDD5 /* MakeMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E161E01BA3DA330054EDD5 /* MakeMoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeMoneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E161E51BA3DA330054EDD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -611,6 +614,8 @@
 				81E162831BA3DCCF0054EDD5 /* WKNavigationController.m */,
 				81E162841BA3DCCF0054EDD5 /* WKTextViewController.h */,
 				81E162851BA3DCCF0054EDD5 /* WKTextViewController.m */,
+				81C416171BA6E3ED0016E7B0 /* MMWebViewController.h */,
+				81C416181BA6E3ED0016E7B0 /* MMWebViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -827,6 +832,7 @@
 				81E162BA1BA3DCCF0054EDD5 /* JSONModelArray.m in Sources */,
 				81E162AA1BA3DCCF0054EDD5 /* AIMessageWrapper.m in Sources */,
 				81E162E91BA3DCCF0054EDD5 /* WKTabBarController.m in Sources */,
+				81C416191BA6E3ED0016E7B0 /* MMWebViewController.m in Sources */,
 				81E162A61BA3DCCF0054EDD5 /* UP_NSString+Format.mm in Sources */,
 				81E162CB1BA3DCCF0054EDD5 /* SDWebImageCompat.m in Sources */,
 				81E162CD1BA3DCCF0054EDD5 /* SDWebImageDownloader.m in Sources */,

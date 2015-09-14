@@ -12,6 +12,7 @@
 #import "MMJobHeaderView.h"
 #import "UIImageView+WebCache.h"
 #import "MJRefresh.h"
+#import "MMWebViewController.h"
 
 #define kImageWidth  145
 #define kImageHeight 95
@@ -147,6 +148,10 @@
 
 - (void)loopViewDidSelectedImage:(WMLoopView *)loopView index:(int)index
 {
+    MMWebViewController *web = [[MMWebViewController alloc] initWithUrlString:@"http://www.baidu.com" barTitle:@"百度"];
+    web.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:web animated:YES];
+    
     
 }
 
@@ -187,7 +192,7 @@
     
     if (kind == UICollectionElementKindSectionHeader) {
         reusableview = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kCellDequeueHeaderID forIndexPath:indexPath];
-        
+        reusableview.loopDelegate = self;
         NSString *url = @"https://tse1-mm.cn.bing.net/th?id=JN.ZRGgDZPBbLrhvVdQ9Mzj8A&w=125&h=105&c=7&rs=1&qlt=90&pid=3.1&rm=2";
         NSArray *images = @[url, url, url];
         [reusableview resetLoopViewWithImages:images];
