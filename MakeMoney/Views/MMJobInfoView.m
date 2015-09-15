@@ -52,7 +52,11 @@
 
 - (void)hide
 {
-    UtilRemoveView(self);
+    self.userInteractionEnabled = NO;
+    [UIView animateWithDuration:0.25 animations:^{
+        _contentView.transform = CGAffineTransformMakeScale(0.6, 0.6);
+        self.alpha = 0;
+    } completion:nil];
 }
 
 - (CGFloat)calculateContentHeight

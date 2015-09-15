@@ -10,4 +10,8 @@
 
 @interface MMJobModel : JSONModel
 
+@property (nonatomic, strong) NSString<Optional> *context;
+@property (nonatomic, strong) NSString<Optional> *price;
+@property (nonatomic, strong) NSString<Optional> *keyWord;
+
 @end
